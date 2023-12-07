@@ -39,7 +39,7 @@ const renameJS = ({ dirname, basename, extname }) => ({
 gulp.task("deploy", function () {
   return gulp.src("./dist/**/*").pipe(
     deploy({
-      remoteUrl: "https://github.com/EmirAliyev/responsive.git",
+      remoteUrl: "https://github.com/EmirAliyev/responsive_new.git",
       branch: "main",
     })
   );
