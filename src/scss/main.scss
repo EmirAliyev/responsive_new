@@ -94,21 +94,6 @@ body {
   letter-spacing: 0.02rem;
 }
 
-.d-display-desktop {
-  display: inline-block !important;
-}
-.d-display-mob {
-  display: none !important;
-}
-
-@media (max-width: $mob) {
-  .d-display-desktop {
-    display: none !important;
-  }
-  .d-display-mob {
-    display: inline-block !important;
-  }
-}
 
 @import "./sections/header";
 @import "./sections/challenges";
