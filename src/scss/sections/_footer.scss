@@ -1,0 +1,254 @@
+.footer {
+  overflow-x: hidden;
+  padding-top: 5rem;
+  position: relative;
+  &__title {
+    @include app-font(3rem, 4.25rem, $dark_brown, 500);
+    letter-spacing: -0.06rem;
+    font-family: "Roboto Serif";
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 2.1875rem;
+    &-green {
+      color: $dark_green;
+    }
+  }
+  &__form {
+    background: #84af3a;
+    width: 108rem;
+    height: 45rem;
+    margin: 0 auto;
+    border-radius: 4.375rem 0 4.375rem;
+    position: relative;
+    padding-top: 4.125rem;
+    font-family: "Inter";
+    &-title {
+      text-align: center;
+      @include app-font(2.5rem, 3.5rem, white, 500);
+      margin-bottom: 4.8125rem;
+      text-transform: none;
+      font-family: "Roboto Serif";
+    }
+  }
+  &__list {
+    padding: 3rem 0 2.9375rem 6rem;
+    display: flex;
+    gap: 3rem;
+    @include app-font(0.875rem, 0.75rem, $dark_brown, 300);
+    &-item {
+      cursor: pointer;
+    }
+  }
+  &__btn {
+    @include app-font(1rem, 1rem, white, 700);
+    border: 0.15rem solid white;
+    margin: 0 auto;
+    width: 13.75rem;
+  }
+  &__leaves-light {
+    position: absolute;
+    width: 11.7671rem;
+    height: 11.7671rem;
+    right: 2.1956rem;
+    bottom: 3rem;
+  }
+  &__leaves-dark {
+    position: absolute;
+    width: 9.1951rem;
+    height: 9.1951rem;
+    right: 9.5rem;
+    bottom: -0.06rem;
+  }
+  .feedback-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    width: 53.25rem;
+    margin: 0 auto;
+    margin-bottom: 2.625rem;
+  }
+
+  .input__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .textarea-container {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.75rem;
+    grid-column: span 2;
+  }
+
+  .base-input {
+    width: 100%;
+    height: 4.5rem;
+    background: #79a430;
+    border-radius: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 0.75rem;
+    letter-spacing: 2%;
+    border: 0rem;
+    padding: 1.875rem;
+    color: white;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .input-label {
+    font-size: 0.875rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.0175rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .base-textarea {
+    resize: none;
+    height: 6rem;
+  }
+}
+
+@media (max-width: $tab) {
+  .footer {
+    overflow-x: hidden;
+    padding-top: 3.0625rem;
+    position: relative;
+    &__title {
+      @include app-font(1.875rem, 2.625rem, $dark_brown, 500);
+      letter-spacing: -0.0375rem;
+      font-family: "Roboto Serif";
+      margin-bottom: 2.0625rem;
+    }
+    &__form {
+      background: #84af3a;
+      width: 42rem;
+      height: 32.625rem;
+      padding-top: 3.1875rem;
+      &-title {
+        @include app-font(1.5rem, 2.125rem, white, 500);
+        letter-spacing: -0.03rem;
+        margin-bottom: 2.5625rem;
+        font-family: "Roboto Serif";
+      }
+    }
+    &__list {
+      padding: 1.25rem 0 1.125rem 3rem;
+      display: flex;
+      gap: 1.5rem;
+      @include app-font(0.75rem, 0.75rem, $dark_brown, 300);
+    }
+    &__btn {
+      @include app-font(0.875rem, 1rem, white, 700);
+      letter-spacing: 0.0175rem;
+      border: 0.15rem solid white;
+      margin: 0 auto;
+      width: 13.5rem;
+      padding: 1.25rem 3.5rem;
+    }
+    &__leaves-light {
+      position: absolute;
+      width: 8.7671rem;
+      height: 8.7671rem;
+      right: 2.1956rem;
+      bottom: 3rem;
+    }
+    &__leaves-dark {
+      position: absolute;
+      width: 6.1951rem;
+      height: 6.1951rem;
+      right: 9.5rem;
+      bottom: -0.06rem;
+    }
+    .feedback-form {
+      width: 34.875rem;
+      margin-bottom: 1.5rem;
+      grid-gap: 0.75rem;
+    }
+
+    .textarea-container {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+
+      gap: 0.75rem;
+      grid-column: span 2;
+    }
+
+    .base-input {
+      width: 100%;
+      height: 3.75rem;
+      border-radius: 0.75rem;
+      font-size: 0.75rem;
+      line-height: 0.75rem;
+      letter-spacing: 0.015rem;
+    }
+    .input-label {
+      font-size: 0.75rem;
+      line-height: 0.75rem;
+      letter-spacing: 0.015rem;
+      color: white;
+    }
+
+    .base-textarea {
+      resize: none;
+      height: 6rem;
+    }
+  }
+}
+
+@media (max-width: $mob) {
+  .footer {
+    padding-top: 2.375rem;
+    &__title {
+      @include app-font(1.25rem, 1.875rem, $dark_brown, 500);
+      width: 17rem;
+      margin: 0 auto;
+      letter-spacing: -0.025rem;
+      font-family: "Roboto Serif";
+      margin-bottom: 1.5rem;
+    }
+    &__form {
+      width: 20rem;
+      height: 34.75rem;
+      padding: 1.5rem 1.5rem 2.375rem 1.5rem;
+      border-radius: 0;
+      &-title {
+        @include app-font(1.125rem, 1.75rem, white, 500);
+        letter-spacing: -0.0225rem;
+        margin-bottom: 2rem;
+        font-family: "Roboto Serif";
+      }
+    }
+    &__list {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 0;
+    }
+    &__btn {
+      @include app-font(0.875rem, 1rem, white, 700);
+      letter-spacing: 0.0175rem;
+      border: 0.15rem solid white;
+      margin: 0 auto;
+      width: 100%;
+      height: 3.5rem;
+      padding: 1.125rem 0rem;
+    }
+    &__leaves-light {
+      display: none;
+    }
+    &__leaves-dark {
+      display: none;
+    }
+    .feedback-form {
+      width: 100%;
+      margin-bottom: 1.25rem;
+      display: flex;
+      grid-gap: 1.25rem;
+      flex-direction: column;
+    }
+  }
+}
